@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Example</title>
+        <script src="jquery.min.js"></script>
+        <script src="moment.min.js"></script>
+        <script src="moment-jalaali.js"></script>
+        <script src="moment-hijri.js"></script>
+        <script src="polymoment.js"></script>
+    </head>
+    <body>
+        <script>
+                $(function(){
+                    var jm = moment("jalali");
+                    jm.add(1,"day");
+                    var m = moment();
+                    var im = moment("hijri");
+                    document.write(jm.week());
+                    document.write('<br>georg:');
+                    document.write(m.week());
+                    document.write('<br>hijri:');
+                    document.write(im.week());
+                });
+            </script>
+    </body>
+</html>
+    
